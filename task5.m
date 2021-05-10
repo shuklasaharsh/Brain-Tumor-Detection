@@ -1,6 +1,5 @@
 % ECE3005 Digital Image Processing
 % Task 5: Medical Image Enhancement Using BBHE Processing
-%Name:Awadh Vyas Reg.No:18BEC0301 Ph:7698767952 Slot:L45+L46
 %Date:03.04.2021
 tic,
 clear all;
@@ -10,9 +9,9 @@ clc;
 PSNR_Value=zeros(1,5);
 MSE_Value=zeros(1,5);
 results='For the 5 images:';
-for i=0:4
+for i=1:3
 %%% Importing image and pre-processing
-imname=sprintf('%d.jpg',i); %importing image
+imname=sprintf('%d.jpeg',i); %importing image
  I = imread(imname);
  try
  im = rgb2gray(I); %converting to grayscale image
